@@ -3,7 +3,7 @@
     StaticService::includeAppJsStatic('/js/web/user/edit.js',\app\assets\WebAsset::className());
 ?>
 <?=Yii::$app->view->render("@app/modules/web/views/common/tab_user.php",['current'=>'edit']);?>
-</div><div class="row m-t  user_edit_wrap">
+<div class="row m-t  user_edit_wrap">
     <div class="col-lg-12">
         <h2 class="text-center">账号信息编辑</h2>
         <div class="form-horizontal m-t m-b">

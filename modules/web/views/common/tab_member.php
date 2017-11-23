@@ -3,22 +3,18 @@
  * Created by PhpStorm.
  * User: Administrator
  * Date: 2017/11/23 0023
- * Time: 上午 6:14
+ * Time: 上午 7:18
  */
 use \app\common\services\UrlService;
 $tab_list = [
     'index'=>[
-        'title'=> '图书列表',
-        'url' =>'/book/index'
+        'title'=> '会员列表',
+        'url' =>'/member/index'
     ],
-    'cat'=>[
-        'title'=> '分类列表',
-        'url' => '/book/cat'
-    ],
-    'images'=>[
-        'title'=> '图片资源',
-        'url' => '/book/images'
-    ],
+    'comment'=>[
+        'title'=> '会员评论',
+        'url' => '/member/comment'
+    ]
 ];
 ?>
 <div class="row  border-bottom">

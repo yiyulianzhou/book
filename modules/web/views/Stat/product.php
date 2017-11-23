@@ -1,25 +1,4 @@
-
-
-        <div class="row  border-bottom">
-            <div class="col-lg-12">
-                <div class="tab_title">
-                    <ul class="nav nav-pills">
-                        <li  >
-                            <a href="/web/stat/index">财务统计</a>
-                        </li>
-                        <li  class="current"  >
-                            <a href="/web/stat/product">商品售卖</a>
-                        </li>
-                        <li  >
-                            <a href="/web/stat/member">会员消费统计</a>
-                        </li>
-                        <li  >
-                            <a href="/web/stat/share">分享统计</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<?=Yii::$app->view->render("@app/modules/web/views/common/tab_stat.php",['current'=>'product']);?>
         <div class="row m-t">
             <div class="col-lg-12 m-t">
                 <form class="form-inline" id="search_form_wrap">

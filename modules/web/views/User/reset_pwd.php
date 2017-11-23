@@ -3,7 +3,7 @@ use \app\common\services\StaticService;
 StaticService::includeAppJsStatic('/js/web/user/reset_pwd.js',\app\assets\WebAsset::className());
 ?>
 <?=Yii::$app->view->render("@app/modules/web/views/common/tab_user.php",['current'=>'reset']);?>
-        </div><div class="row m-t  user_reset_pwd_wrap">
+    <div class="row m-t  user_reset_pwd_wrap">
             <div class="col-lg-12">
                 <h2 class="text-center">修改密码</h2>
                 <div class="form-horizontal m-t m-b">

@@ -1,16 +1,6 @@
 
 
-        <div class="row  border-bottom">
-            <div class="col-lg-12">
-                <div class="tab_title">
-                    <ul class="nav nav-pills">
-                        <li  class="current"  >
-                            <a href="/web/qrcode/index">渠道二维码</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<?=Yii::$app->view->render("@app/modules/web/views/common/tab_qrcode.php",['current'=>'index']);?>
         <div class="row">
             <div class="col-lg-12">
                 <div class="row m-t">

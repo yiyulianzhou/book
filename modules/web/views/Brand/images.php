@@ -1,18 +1,6 @@
 
-        <div class="row  border-bottom">
-            <div class="col-lg-12">
-                <div class="tab_title">
-                    <ul class="nav nav-pills">
-                        <li  >
-                            <a href="/web/brand/info">品牌信息</a>
-                        </li>
-                        <li  class="current"  >
-                            <a href="/web/brand/images">品牌相册</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div><div class="row">
+<?=Yii::$app->view->render("@app/modules/web/views/common/tab_brand.php",['current'=>'images']);?>
+        <div class="row">
             <div class="col-lg-12">
                 <div class="row m-t">
                     <div class="col-lg-12">

@@ -21,12 +21,12 @@ var user_edit_ops = {
             var email = email_target.val();
 
             if( !nickname || nickname.length < 2 ){
-                alert("请输入符合规范的姓名~~",nickname_target);
+                common_ops.tip("请输入符合规范的姓名~~",$(".user_edit_wrap input[name=nickname]"));
                 return false;
             }
 
             if( !email || email.length < 2 ){
-                alert("请输入符合规范的邮箱地址~~",email_target);
+                common_ops.tip("请输入符合规范的邮箱地址~~",$(".user_edit_wrap input[name=nickname]"));
                 return false;
             }
 
@@ -39,19 +39,21 @@ var user_edit_ops = {
             };
 
             $.ajax({
-                url:common_ops.buildWebUrl('user/edit'),
+                url:common_ops.buildWebUrl('/user/edit'),
                 type:'POST',
                 data:data,
                 dataType:'json',
                 success:function(res){
                     btn_target.removeClass("disabled");
-
+                    callback = null;
                     if( res.code == 200 ){
+                        callback=function(){
+                            window.location.href = window.location.href;
+                        }
 
-                        window.location.href = window.location.href;
 
                     }
-                    alert( res.msg );
+                    common_ops.alert( res.msg ,callback);
                 }
             });
         });

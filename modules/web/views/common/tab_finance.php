@@ -3,22 +3,18 @@
  * Created by PhpStorm.
  * User: Administrator
  * Date: 2017/11/23 0023
- * Time: 上午 6:14
+ * Time: 上午 7:23
  */
 use \app\common\services\UrlService;
 $tab_list = [
     'index'=>[
-        'title'=> '图书列表',
-        'url' =>'/book/index'
+        'title'=> '订单列表',
+        'url' =>'/finance/index'
     ],
-    'cat'=>[
-        'title'=> '分类列表',
-        'url' => '/book/cat'
-    ],
-    'images'=>[
-        'title'=> '图片资源',
-        'url' => '/book/images'
-    ],
+    'pay_info'=>[
+        'title'=> '财务流水',
+        'url' => '/finance/pay_info'
+    ]
 ];
 ?>
 <div class="row  border-bottom">
@@ -33,4 +29,4 @@ $tab_list = [
             </ul>
         </div>
     </div>
-</div>
+  </div>

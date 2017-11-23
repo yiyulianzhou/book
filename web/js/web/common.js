@@ -63,6 +63,7 @@ var common_ops = {
             }
         });
     },
+
     setMenuIconHighLight:function(){
         if( $("#side-menu li").size() < 1 ){
             return;
@@ -129,11 +130,11 @@ var common_ops = {
         var domain = "http://" + window.location.hostname;
         return domain + upload_config[ bucket ] + "/" + img_key;
     },
-    alert:function( msg ,cb ){
+    alert:function( msg ,callback ){
         layer.alert( msg,{
             yes:function( index ){
-                if( typeof cb == "function" ){
-                    cb();
+                if( typeof callback == "function" ){
+                    callback();
                 }
                 layer.close( index );
             }
